@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+var my_boxes=new Array(5);
+for(var i=0;i<5;i++)
+{
+my_boxes[i]=new Array (5);
+for(var j=0;j<5;j++)
+my_boxes[i][j]=1;
+}
+my_boxes[0][0]="boom";
+my_boxes[1][1]="boom";
+my_boxes[2][2]="boom";
+my_boxes[3][3]="boom";
+my_boxes[4][4]="boom";
+ 
+function ch1(a)
+{
+console.log(a);
+var row=a.id.split{'_'}[0];
+var column=a.id.split{'_'}[1];
+for(var i=0;i<5;i++)
+{
+for(var j=0;j<5;j++)
+if(my_boxes[i][j]=="boom"){
+for(var i=0;i<5;i++)
+{
+for(var j=0;j<5;j++){
+if(my_boxes[i][j]=="boom")
+document.getElementById(i+'_'+j).src="boom.png";
+else
+document.getElementById(i+'_'+j).src="1.png";
+}
+}
+}
+}
+}
+
+
+function ch2(a){
+a.src="flag.png";
+}
+
+</script>
+
+</head>
+<body>
+
+<img type="button" id=0_0 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=0_1 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=0_2 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=0_3 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=0_4 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<br>
+<img type="button" id=1_0 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=1_1 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=1_2 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=1_3 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=1_4 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<br>
+<img type="button" id=2_0 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=2_1 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=2_2 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=2_3 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=2_4 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<br>
+<img type="button" id=3_0 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=3_1 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=3_2 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=3_3 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=3_4 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<br>
+<img type="button" id=4_0 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=4_1 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=4_2 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=4_3 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<img type="button" id=4_4 onclick="ch1(this)" oncontextmenu="ch2(this)" src="up.png" style="height:15px;width:15px;">
+<br>
+</body>
+</html>
+ 
